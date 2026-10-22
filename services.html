@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prime Cut Meat Shop — Our Meats & Services.">
+  <title>Prime Cut | Our Meats</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">FRESH CUTS, GREAT VALUE <span>•</span> QUALITY YOU CAN TRUST</div>
+  
+  <header class="header">
+    <a class="logo" href="index.html"><span class="logo-icon">PC</span><span>PRIME<span class="logo-red">CUT</span><small>MEAT SHOP</small></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Our Meats</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Open shopping cart">🛒 <span>Cart</span> <b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="products-section" id="products">
+      <div class="section-head">
+        <div><p class="eyebrow">FROM OUR COUNTER TO YOUR KITCHEN</p><h2>Shop fresh cuts</h2><p class="subhead">Choose your favorites and add them to your basket.</p></div>
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search meat..." aria-label="Search meat products"></div>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All Products</button>
+        <button class="filter" data-category="Beef">Beef</button>
+        <button class="filter" data-category="Pork">Pork</button>
+        <button class="filter" data-category="Chicken">Chicken</button>
+        <button class="filter" data-category="Seafood">Seafood</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><h3>No matching products</h3><p>Try another search or category.</p><button class="btn btn-dark" id="resetSearch">View all products</button></div>
+      <p class="price-note">Prices shown are sample prices for this website demo. Update them to match your store.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">PC</span><span>PRIME<span class="logo-red">CUT</span><small>MEAT SHOP</small></span></a>
+    <p>Fresh choices for your family table.</p>
+    <small>© <span id="year"></span> Prime Cut Meat Shop · Website demo</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <button class="backdrop" id="closeBackdrop" aria-label="Close shopping cart"></button>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Shopping basket</h2></div><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₱0.00</strong></div><p class="cart-note">Final weight and price may vary for products sold by weight.</p><button class="btn btn-red checkout" id="checkout">PLACE ORDER REQUEST <span>→</span></button><small class="demo-note">Demo only — no payment is collected.</small></div>
+    </aside>
+  </div>
+</body>
+</html>

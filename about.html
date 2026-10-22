@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Prime Cut Meat Shop.">
+  <title>Prime Cut | About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="topbar">FRESH CUTS, GREAT VALUE <span>•</span> QUALITY YOU CAN TRUST</div>
+  
+  <header class="header">
+    <a class="logo" href="index.html"><span class="logo-icon">PC</span><span>PRIME<span class="logo-red">CUT</span><small>MEAT SHOP</small></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Our Meats</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="Open shopping cart">🛒 <span>Cart</span> <b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <div class="about-photo"><img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?auto=format&fit=crop&w=1000&q=85" alt="Butcher preparing quality cuts"></div>
+      <div class="about-copy">
+        <p class="eyebrow">A SHOP THAT CARES</p>
+        <h2>Good food starts<br>with good choices.</h2>
+        <p>At Prime Cut Meat Shop, we believe great meals begin with ingredients you can feel good about. Explore a range of everyday cuts for family dinners, special occasions, and weekend grilling.</p>
+        <a href="contact.html" class="text-link">GET IN TOUCH <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html"><span class="logo-icon">PC</span><span>PRIME<span class="logo-red">CUT</span><small>MEAT SHOP</small></span></a>
+    <p>Fresh choices for your family table.</p>
+    <small>© <span id="year"></span> Prime Cut Meat Shop · Website demo</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="cart-overlay" id="cartOverlay" hidden>
+    <button class="backdrop" id="closeBackdrop" aria-label="Close shopping cart"></button>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Shopping basket</h2></div><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₱0.00</strong></div><p class="cart-note">Final weight and price may vary for products sold by weight.</p><button class="btn btn-red checkout" id="checkout">PLACE ORDER REQUEST <span>→</span></button><small class="demo-note">Demo only — no payment is collected.</small></div>
+    </aside>
+  </div>
+</body>
+</html>
